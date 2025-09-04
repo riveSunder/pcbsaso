@@ -775,7 +775,7 @@ video_kwargs["link"] = "assets/gliders1.mp4"
 video_kwargs["width"] = 640
 video_kwargs["height"] = 640
 video_kwargs["alt_text"] = "video of multichannel glaberish undergoing intrinsic evolution, with temperature dependent genesis function, neutral albedo activations" 
-video_kwargs["caption"] = "Multichannel glaberish with temperature dependence and progressively increasing luminosity forcing. Each channel has the same albedo as background."
+video_kwargs["caption"] = ""
 
 video_content = make_video_block(**video_kwargs) 
 
