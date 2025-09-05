@@ -90,11 +90,11 @@ slide_kwargs = {}
 
 slide_maker["function"] = slide_function
 slide_kwargs["title"] = basename
-slide_kwargs["header"] = "Planetary Cybernetics by Selection and Self-Organizaiton"
+slide_kwargs["header"] = "Planetary Cybernetics by Selection and Self-Organization"
 slide_kwargs["slide_idx"] = slide_index
-slide_kwargs["author"] = "Rive Sunder" # update this TODO 
-slide_kwargs["date"] = "2025/09/05"
-slide_kwargs["location"] = "TOKYO VENTURE CAPITAL HUB 東京市港区"
+slide_kwargs["author"] = "Q. T. Davis / @rivesunder<br>qtd.tai.winter796@passmail.net" # update this TODO 
+slide_kwargs["date"] = "<br>2025/09/05"
+slide_kwargs["location"] = "TOKYO AAI #12: Evolutionary Algorithms<br>東京市港区"
 slide_kwargs["caption"] = "<em><a href='https://www.tokyoai.jp/'>Tokyo AI</a></em>"
 slide_kwargs["top_page"] = top_page
 
@@ -379,7 +379,7 @@ slide_maker["slide_kwargs"] = slide_kwargs
 slide_makers, slides, slide_index = update_slides_list(slide_makers, \
     slide_maker, slides, slide_index)
 
-# [ ] CARLE and HARLI learning generalizaiton (space ships don't work in all rulesets here)
+# [ ] CARLE and HARLI learning generalization (space ships don't work in all rulesets here)
 image_kwargs = deepcopy(image_kwargs)
 image_kwargs["image_filepath"] = "assets/spaceships.gif"
 image_kwargs["link"] = "assets/spaceships.gif"
@@ -628,10 +628,20 @@ points.append("With the addition of mutation in (<a href='https://www.sciencedir
 points.append("Desert formation in a 2D DaisyWorld implemented by the author (<a href='https://github.com/rivesunder/therldaisyworld'>TheRLDaisyWorld</a>)")
 
 text_content = make_text_block(bullet_points=points)
-after_fold = make_text_block(bullet_points=points2)
 
+video_kwargs = deepcopy(my_video_kwargs)
+
+video_kwargs["thumbnail_path"] = ""
+video_kwargs["video_path"] = "assets/refugia64_light_and_dark_000.mp4"
+video_kwargs["link"] = "assets/refugia64_light_and_dark_000.mp4"
+video_kwargs["width"] = 768
+video_kwargs["height"] = 768
+video_kwargs["alt_text"] = "" 
+video_kwargs["caption"] = "Refugia allows daisies to reclaim bare surface. "
+
+video_content = make_video_block(**video_kwargs) 
 slide_kwargs = deepcopy(sc_slide_kwargs)
-slide_kwargs["after_fold"] = "" #after_fold
+slide_kwargs["after_fold"] = video_content
 
 slide_kwargs["content_str"] = image_content_left + text_content
 
@@ -841,14 +851,33 @@ slide_kwargs = deepcopy(sc_slide_kwargs)
 slide_kwargs["content_str"] = "Supported by <a href='https://www.crosslabs.org'>Cross Labs</a> and <a href='https://www.cross-compass.com'>Cross Compass</a>.<br><br>" + image_content_one + image_content_two + video_content
 slide_kwargs["after_fold"] = ""
 
-slide_kwargs["header"] = "Thanks (time for Qs)"
+slide_kwargs["header"] = "Glider emerges (1)"
 slide_kwargs["caption"] = ""
 slide_maker["function"] = make_single_column
 slide_maker["slide_kwargs"] = slide_kwargs
 
 slide_makers, slides, slide_index = update_slides_list(slide_makers, \
     slide_maker, slides, slide_index)
+#glaberish_gld2.mp4
+video_kwargs = deepcopy(my_video_kwargs)
 
+video_kwargs["thumbnail_path"] = ""
+video_kwargs["video_path"] = "assets/glaberish_gld2.mp4"
+video_kwargs["link"] = "assets/glaberish_gld2.mp4"
+video_kwargs["width"] = 640
+video_kwargs["height"] = 640
+video_kwargs["alt_text"] = "" 
+video_kwargs["caption"] = ""
+slide_kwargs = deepcopy(sc_slide_kwargs)
+
+slide_kwargs["content_str"] = "Supported by <a href='https://www.crosslabs.org'>Cross Labs</a> and <a href='https://www.cross-compass.com'>Cross Compass</a>.<br><br>" + image_content_one + image_content_two + video_content
+slide_kwargs["header"] = "Glider emerges (2)"
+slide_kwargs["caption"] = "Glider making use two albedo channels to maintain a locally habitable niche."
+slide_maker["function"] = make_single_column
+slide_maker["slide_kwargs"] = slide_kwargs
+
+slide_makers, slides, slide_index = update_slides_list(slide_makers, \
+    slide_maker, slides, slide_index)
 # build the slide deck!
 for mk_idx, slide_mkr in enumerate(slide_makers):
 
