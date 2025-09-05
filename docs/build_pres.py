@@ -136,7 +136,7 @@ slide_makers, slides, slide_index = update_slides_list(slide_makers, \
 
 slide_maker["function"] = make_single_column
 points = []
-points.append("Introduce the confluence of concepts")
+points.append("Introduce concepts:")
 points.append("a. Overview of daisyworld and descendants")
 points.append("b. Self-organisation in cellular automata (CA)")
 points.append("Evolution strategies and specification gaming")
@@ -205,7 +205,7 @@ points.append("<strong>James Lovelock</strong>, influenced by life-detection res
 points.append("Skeptics include Richard Dawkins (<a href='https://en.wikipedia.org/wiki/The_Extended_Phenotype'>1982</a>) and W. Ford Doolittle (<a href='https://archive.org/details/coevolutionquart00unse_25/page/58/mode/2up'>1981</a>)")
 points.append("<strong>Dawkins</strong>: 'The Universe would have to be full of dead planets whose homeostatic regulation systems had failed, with, dotted around, a handful of successful, well-regulated planets of which Earth is one.' and '[...] we would have to postulate some kind of reproduction, whereby successful planets spawned copies of their life forms on new planets.'")
 points.append("<strong>Doolittle</strong>: 'I do not doubt that some of the feedback loops which Lovelock claims exist do exist, but I do doubt that they were created by natural selection, or that they are anything but accidental.' ")
-points.append("<strong>Andrew Watson and James Lovelock</strong> describe a mathematical model, daisyworld, that uses selection to maintain habitable temperatures (<a href='https://archive.org/details/coevolutionquart00unse_34/page/66/mode/2up'>1983a</a>, <a href='https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1600-0889.1983.tb00031.x'>1983b</a>)")
+points.append("<strong>Andrew Watson and James Lovelock</strong> describe a mathematical model, <tt>daisyworld</tt>, that uses selection to maintain habitable temperatures (<a href='https://archive.org/details/coevolutionquart00unse_34/page/66/mode/2up'>1983a</a>, <a href='https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1600-0889.1983.tb00031.x'>1983b</a>)")
 
 points2 = []
 points2.append("<strong>Dawkins</strong>: 'oxygen production as a byproduct of plant activity' ... 'we have been selected to breathe oxygen partly because there is so much of it about' ")
@@ -247,7 +247,7 @@ slide_makers, slides, slide_index = update_slides_list(slide_makers, \
 
 # [ ] self-organisation from Life to Lenia and NCA
 points = []
-points.append("<strong>John von Neumann</strong> (+Stanislaw Ulam) and <strong>John Horton Conway</strong> develop CA and the Game of Life with replication, construction, and complexity in mind ().")
+points.append("<strong>John von Neumann</strong> (+Stanislaw Ulam) and <strong>John Horton Conway</strong> develop CA and the Game of Life with replication, construction, and complexity in mind (<a href='https://archive.org/details/theoryofselfrepr00vonn_0'>JvN 1966</a>, <a href='https://web.stanford.edu/class/sts145/Library/life.pdf'>Gardner 1970</a>).")
 # add a bit about varela and maturana, 
 points.append("Richard Guy discovers the reflex glider in Life (~1970)") #, Maturana and Varela, R.D. ")
 #points.append("a lot of other things happen")
@@ -271,16 +271,16 @@ slide_makers, slides, slide_index = update_slides_list(slide_makers, \
 image_kwargs = deepcopy(image_kwargs)
 image_kwargs["image_filepath"] = "assets/s11_slow.gif"
 image_kwargs["link"] = "assets/s11_slow.gif"
-image_kwargs["image_alt_text"] = "An evolved slow glider in an evolved CA rule s11 from the glaberish CA family" 
-image_kwargs["caption"] = "A slow glider emerging from an evolved synthesis pattern in an evolved CA rule s11 in the glaberish CA family"
+image_kwargs["image_alt_text"] = "An evolved slow glider in evolved CA rule s11 from the glaberish CA family" 
+image_kwargs["caption"] = "A slow glider emerging from an evolved synthesis pattern in evolved CA rule s11 in the glaberish CA family"
 
 image_content_left = make_image_block(**image_kwargs) 
 
 image_kwargs = deepcopy(image_kwargs)
 image_kwargs["image_filepath"] = "assets/frog_race.gif"
 image_kwargs["link"] = "assets/frog_race.gif"
-image_kwargs["image_alt_text"] = "An evolved hopping glider(s) in an evolved CA rule s11 from the glaberish CA family" 
-image_kwargs["caption"] = "A group of 'hopping' gliders emerging from an evolved synthesis pattern in an evolved CA rule s643. From (<a href='https://direct.mit.edu/isal/proceedings/isal2022/34/47/112267'>Davis <em>et al.<em> 2022b</a>)"
+image_kwargs["image_alt_text"] = "An evolved hopping glider(s) in evolved CA rule s643 from the glaberish CA family" 
+image_kwargs["caption"] = "A group of 'hopping' gliders emerging from an evolved synthesis pattern in evolved CA rule s643. From (<a href='https://direct.mit.edu/isal/proceedings/isal2022/34/47/112267'>Davis <em>et al.<em> 2022b</a>)"
 
 image_content_right = make_image_block(**image_kwargs) 
 
@@ -327,7 +327,7 @@ image_kwargs = deepcopy(image_kwargs)
 image_kwargs["image_filepath"] = "assets/swingup_fitness_policies.gif"
 image_kwargs["link"] = "assets/swingup_fitness_policies.gif"
 image_kwargs["image_alt_text"] = "An evolved hopping glider(s) in an evolved CA rule s11 from the glaberish CA family" 
-image_kwargs["caption"] = "Policies generated from latent (fitness landscape below) from an evolved policy-generating network evolved on the InvertedPendulumSwingupBulletEnv-v0 task"
+image_kwargs["caption"] = "Policies generated from a latent space (fitness landscape below) from an evolved <a href='https://web.stanford.edu/class/sts145/Library/life.pdf'>policy-generating network</a> evolved on the InvertedPendulumSwingupBulletEnv-v0 task"
 
 image_content_bottomright = make_image_block(**image_kwargs) 
 
@@ -366,12 +366,12 @@ image_kwargs = deepcopy(image_kwargs)
 image_kwargs["image_filepath"] = "assets/strategy_demo_127.gif"
 image_kwargs["link"] = "assets/strategy_demo_127.gif"
 image_kwargs["image_alt_text"] = "Hebbian Automata Reinforcement Learning Improviser (HARLI) demonstrates a wave strategy" 
-image_kwargs["caption"] = "Hebbian Automata Reinforcement Learning Improviser (HARLI) demonstrates its 'wave' strategy. HARLI starts with randomly initialised weights and updates them according to an <span title='with covariance matrix evolution strategies'>evolved</span> Hebbian learning policy, eventually reaching a high-scoring wave generation strategy. The waves travel at c, the maximum speed in Life-like CA, and yield a reward of <span title='it uses a few other tricks to reach these scores'>about 40 to 50</span>. -> <a href='https://github.com/harli_learning'>https://github.com/rivesunder/harli_learning</a>, (<a href='https://ieee-cog.org/2021/assets/papers/paper_329.pdf'>Davis 2021</a>)"
+image_kwargs["caption"] = "Hebbian Automata Reinforcement Learning Improviser (HARLI) demonstrates its 'wave' strategy. HARLI starts with randomly initialised weights and updates them according to an <span title='with covariance matrix evolution strategies'>evolved</span> Hebbian learning policy, eventually reaching a high-scoring wave generation strategy. The waves travel at <em>c</em>, the maximum speed in Life-like CA, and yield a reward of <span title='it uses a few other tricks to reach these scores'>about 40 to 50</span>. -> <a href='https://github.com/harli_learning'>https://github.com/rivesunder/harli_learning</a>, (<a href='https://ieee-cog.org/2021/assets/papers/paper_329.pdf'>Davis 2021</a>)"
 
 image_content = make_image_block(**image_kwargs) 
 
 slide_kwargs = deepcopy(sc_slide_kwargs)
-slide_kwargs["header"] = "A Hebbian policy games a CA RL game"
+slide_kwargs["header"] = "A Hebbian policy games the game in a CA RL environment"
 slide_kwargs["content_str"] = image_content
 slide_kwargs["after_fold"] = "" #after_fold_text # TODO image content for dw equations
 slide_maker["function"] = make_single_column
@@ -504,9 +504,9 @@ slide_makers, slides, slide_index = update_slides_list(slide_makers, \
 points = []
 points2 = []
 points.append("Evo strategies are powerful, <strong>but</strong> vulnerable to specification gaming/reward hacking.")
-points.append("I find intrinsic evolution (selection emerging in the same system that is subject to selection) a promising direction.")
+points.append("I find intrinsic evolution (selection emerging from the same system that is subject to selection) a promising direction.")
 points.append("Open-endedness has been broadly defined and often includes <strong>selection</strong> (<a href='https://dl.acm.org/doi/10.5555/2934046.2934113'>Maley 1999</a>), <strong>reproduction</strong> (<a href=''></a>, <a href='https://direct.mit.edu/isal/proceedings/alife2014/26/793/98965'>Soros+Stanley 2014</a>, <strong>increasing diversity</strong> (<a href='https://dl.acm.org/doi/10.5555/2934046.2934113'>Maley 1999</a>, ), <strong>increasing complexity</strong> (<a href='https://www.fullcircle.nexus/papers/taylor2015requirements.pdf'>Taylor 2015</a>, novelty/surprise (<a href='https://www.nature.com/articles/s41598-017-00810-8'>Adams <em>et al</em> 2017, <a href='https://www.fullcircle.nexus/papers/taylor2015requirements.pdf'>Taylor 2015</a>, <a href='https://direct.mit.edu/isal/proceedings/alife2014/26/793/98965'>Soros+Stanley 2014</a>), and <strong>adaptation</strong> (<a href='https://dl.acm.org/doi/10.5555/2934046.2934113'>Maley 1999</a>, )<span title='This is a non-comprehensive list with non-comprehensive citations'>.</span>")
-points.append("(<a href='https://direct.mit.edu/artl/article/25/2/198/2923/Open-Endedness-for-the-Sake-of-Open-Endedness'>Hintze 2019</a>)demonstrated construction of a system that meets technical definitions of open-endedness while <strong>being rather boring</strong>.")
+points.append("(<a href='https://direct.mit.edu/artl/article/25/2/198/2923/Open-Endedness-for-the-Sake-of-Open-Endedness'>Hintze 2019</a>) demonstrated construction of a system that meets technical definitions of open-endedness while <strong>being rather boring</strong>.")
 points.append("OE/OE evolution may be one of those '<strong>suitcase words</strong>', as M. Minsky <a href='https://en.wikipedia.org/wiki/The_Emotion_Machine' title='_e.g._ in _The Emotion Machine_ 2006'>would say</a>.") 
 
 
@@ -676,7 +676,7 @@ image_kwargs["image_filepath"] = "assets/shorter_glaberish_colored_w_beta.jpg"
 image_kwargs["link"] = "assets/big_glaberish_colored"
 image_kwargs["image_width"] = 100
 image_kwargs["image_alt_text"] = "glaberish CA equation with temperature dependence beta added" 
-image_kwargs["caption"] = "Glaberish with a DaisyWorld temperature dependence (beta) added to modulated genesis function "
+image_kwargs["caption"] = "Glaberish with a DaisyWorld temperature dependence (beta) added to modulate the genesis function "
 
 image_content = make_image_block(**image_kwargs) 
 
@@ -793,7 +793,7 @@ image_kwargs["image_filepath"] = "https://cdn.prod.website-files.com/5e13ec90eb4
 image_kwargs["link"] = "https://www.crosslabs.org/"
 image_kwargs["image_alt_text"] = "" 
 image_kwargs["image_width"] = 15
-image_kwargs["caption"] = ""
+image_kwargs["caption"] = "https://www.crosslabs.org<br>"
 
 image_content_one = make_image_block(**image_kwargs) 
 
@@ -802,7 +802,7 @@ image_kwargs["image_filepath"] = "https://static.wixstatic.com/media/5d827c_77af
 image_kwargs["link"] = "https://www.cross-compass.com"
 image_kwargs["image_alt_text"] = "" 
 image_kwargs["image_width"] = 50
-image_kwargs["caption"] = "" #Supported by <a href='https://www.crosslabs.org'>Cross Labs</a> and <a href='https://www.cross-compass.com'>Cross Compass</a>."
+image_kwargs["caption"] = "https://www.cross-compass.com" #Supported by <a href='https://www.crosslabs.org'>Cross Labs</a> and <a href='https://www.cross-compass.com'>Cross Compass</a>."
 
 image_content_two = make_image_block(**image_kwargs) 
 
@@ -834,7 +834,7 @@ image_kwargs["image_filepath"] = "https://cdn.prod.website-files.com/5e13ec90eb4
 image_kwargs["link"] = "https://www.crosslabs.org/"
 image_kwargs["image_alt_text"] = "" 
 image_kwargs["image_width"] = 15
-image_kwargs["caption"] = ""
+image_kwargs["caption"] = "https://www.crosslabs.org<br>"
 
 image_content_one = make_image_block(**image_kwargs) 
 
@@ -843,7 +843,7 @@ image_kwargs["image_filepath"] = "https://static.wixstatic.com/media/5d827c_77af
 image_kwargs["link"] = "https://www.cross-compass.com"
 image_kwargs["image_alt_text"] = "" 
 image_kwargs["image_width"] = 50
-image_kwargs["caption"] = "" #Supported by <a href='https://www.crosslabs.org'>Cross Labs</a> and <a href='https://www.cross-compass.com'>Cross Compass</a>."
+image_kwargs["caption"] = "https://www.cross-compass.com" #Supported by <a href='https://www.crosslabs.org'>Cross Labs</a> and <a href='https://www.cross-compass.com'>Cross Compass</a>."
 
 image_content_two = make_image_block(**image_kwargs) 
 
@@ -851,7 +851,7 @@ slide_kwargs = deepcopy(sc_slide_kwargs)
 slide_kwargs["content_str"] = "Supported by <a href='https://www.crosslabs.org'>Cross Labs</a> and <a href='https://www.cross-compass.com'>Cross Compass</a>.<br><br>" + image_content_one + image_content_two + video_content
 slide_kwargs["after_fold"] = ""
 
-slide_kwargs["header"] = "Glider emerges (1)"
+slide_kwargs["header"] = "Glider does not emerge with neutral albedo"
 slide_kwargs["caption"] = ""
 slide_maker["function"] = make_single_column
 slide_maker["slide_kwargs"] = slide_kwargs
@@ -870,6 +870,7 @@ video_kwargs["alt_text"] = ""
 video_kwargs["caption"] = ""
 slide_kwargs = deepcopy(sc_slide_kwargs)
 
+video_content = make_video_block(**video_kwargs) 
 slide_kwargs["content_str"] = "Supported by <a href='https://www.crosslabs.org'>Cross Labs</a> and <a href='https://www.cross-compass.com'>Cross Compass</a>.<br><br>" + image_content_one + image_content_two + video_content
 slide_kwargs["header"] = "Glider emerges (2)"
 slide_kwargs["caption"] = "Glider making use two albedo channels to maintain a locally habitable niche."
