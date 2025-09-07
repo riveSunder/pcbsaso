@@ -90,7 +90,7 @@ slide_kwargs = {}
 
 slide_maker["function"] = slide_function
 slide_kwargs["title"] = basename
-slide_kwargs["header"] = "Planetary Cybernetics by Selection and Self-Organization"
+slide_kwargs["header"] = "Planetary Cybernetics by Selection and Self-Organisation"
 slide_kwargs["slide_idx"] = slide_index
 slide_kwargs["author"] = "Q. T. Davis / @rivesunder<br>qtd.tai.winter796@passmail.net" # update this TODO 
 slide_kwargs["date"] = "<br>2025/09/05"
@@ -379,7 +379,7 @@ slide_maker["slide_kwargs"] = slide_kwargs
 slide_makers, slides, slide_index = update_slides_list(slide_makers, \
     slide_maker, slides, slide_index)
 
-# [ ] CARLE and HARLI learning generalization (space ships don't work in all rulesets here)
+# [ ] CARLE and HARLI learning generalissation (space ships don't work in all rulesets here)
 image_kwargs = deepcopy(image_kwargs)
 image_kwargs["image_filepath"] = "assets/spaceships.gif"
 image_kwargs["link"] = "assets/spaceships.gif"
@@ -789,7 +789,7 @@ video_kwargs["caption"] = ""
 
 video_content = make_video_block(**video_kwargs) 
 
-image_kwargs["image_filepath"] = "https://cdn.prod.website-files.com/5e13ec90eb497caec7970be9/62709f41991bfb59f68a770a_webclip-256x256.png "
+image_kwargs["image_filepath"] = "https://cdn.prod.website-files.com/5e13ec90eb497caec7970be9/62709f41991bfb59f68a770a_webclip-256x256.png"
 image_kwargs["link"] = "https://www.crosslabs.org/"
 image_kwargs["image_alt_text"] = "" 
 image_kwargs["image_width"] = 15
@@ -830,7 +830,7 @@ video_kwargs["caption"] = ""
 
 video_content = make_video_block(**video_kwargs) 
 
-image_kwargs["image_filepath"] = "https://cdn.prod.website-files.com/5e13ec90eb497caec7970be9/62709f41991bfb59f68a770a_webclip-256x256.png "
+image_kwargs["image_filepath"] = "https://cdn.prod.website-files.com/5e13ec90eb497caec7970be9/62709f41991bfb59f68a770a_webclip-256x256.png"
 image_kwargs["link"] = "https://www.crosslabs.org/"
 image_kwargs["image_alt_text"] = "" 
 image_kwargs["image_width"] = 15
