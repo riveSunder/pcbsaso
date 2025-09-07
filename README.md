@@ -1,7 +1,7 @@
 # Planetary Cybernetics by Selection and Self-Organisation
 
 <div align="center">
-<a href="https://rivesunder.github.io/pcbsaso"><img src="docs/assets/pcbsaso_glider.png"></a>
+<a href="https://rivesunder.github.io/pcbsaso"><img width=50% src="docs/assets/pcbsaso_glider.png"></a>
 </div>
 
 
